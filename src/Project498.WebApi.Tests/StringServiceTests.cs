@@ -36,7 +36,6 @@ public class StringServiceTests
     public void ReverseWords_WithVariousInputs_ReturnsExpectedResult(string? input, string expected)
     {
         var result = _stringService.Reverse(input!);
-
         Assert.Equal(expected, result);
     }
 }

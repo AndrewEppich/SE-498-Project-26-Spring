@@ -8,7 +8,6 @@ public class StringService : IStringService
         {
             return string.Empty;
         }
-
         string[] words = input.Split(' ');
         Array.Reverse(words);
         return string.Join(' ', words);
