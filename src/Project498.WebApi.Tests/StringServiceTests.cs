@@ -22,7 +22,6 @@ public class StringServiceTests
 
         Assert.Equal(expected, result);
     }
-
         [Theory]
     [InlineData("hello world", "world hello")]
     [InlineData("", "")]
