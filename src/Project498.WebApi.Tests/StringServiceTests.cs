@@ -34,7 +34,7 @@ public class StringServiceTests
     [InlineData("hello world ", " world hello")]
     public void ReverseWords_WithVariousInputs_ReturnsExpectedResult(string? input, string expected)
     {
-        var result = _stringService.Reverse(input!);
+        var result = _stringService.ReverseWords(input!);
         Assert.Equal(expected, result);
     }
 }
