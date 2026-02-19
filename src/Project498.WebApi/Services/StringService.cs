@@ -8,9 +8,8 @@ public class StringService : IStringService
         {
             return string.Empty;
         }
-
-        char[] charArray = input.ToCharArray();
-        Array.Reverse(charArray);
-        return new string(charArray);
+        string[] words = input.Split(' ');
+        Array.Reverse(words);
+        return string.Join(' ', words);
     }
 }
